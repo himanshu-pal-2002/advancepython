@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CallBack Function</title>
+    <script>
+        let calc=function(a,b,calType)
+        {
+            let res=0
+            if (calType=="add")
+            {
+                res=sum(a,b);
+            }
+            else if (calType==="Mul")
+            {
+                res=a*b
+            }
+            return res;
+        }
+        function sum(n1,n2)
+        {
+            return n1+n2;
+        }
+        function mul(n1,n2)
+        {
+            return n1*n2
+        }
+    </script>
+</head>
+<body>
+    <h1>CallBack Function</h1>
+</body>
+</html>
