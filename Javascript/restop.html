@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restoperator</title>
+    <script>
+        function main()
+        {
+            add(1);
+            add(1,2);
+            add(1,2,3);
+            add(1,2,3,4);
+        }
+        function add(...a)
+        {
+            let len=a.length;
+            let sum=0
+            for (let i=0;i<len;i++)
+            {
+                sum+=a[i];
+            }
+            console.log("Sum="+sum)
+        }
+        main()
+    </script>
+</head>
+<body>
+    <h1>Javascript Rest operator</h1>
+</body>
+</html>
